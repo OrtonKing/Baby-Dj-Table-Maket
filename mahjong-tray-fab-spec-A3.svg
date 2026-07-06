@@ -20,10 +20,10 @@
   <g transform="translate(20,42)">
     <rect x="0" y="0" width="380" height="160" rx="8" fill="#f7f2e6" stroke="#222" stroke-width="0.7"/>
     <g fill="#e3d6b4" stroke="#222" stroke-width="0.45">
-      <use xlink:href="#hole" x="16" y="40"/><use xlink:href="#hole" x="44.5" y="40"/><use xlink:href="#hole" x="73" y="40"/><use xlink:href="#hole" x="101.5" y="40"/><use xlink:href="#hole" x="130" y="40"/><use xlink:href="#hole" x="158.5" y="40"/><use xlink:href="#hole" x="187" y="40"/>
-      <use xlink:href="#hole" x="16" y="84"/><use xlink:href="#hole" x="44.5" y="84"/><use xlink:href="#hole" x="73" y="84"/><use xlink:href="#hole" x="101.5" y="84"/><use xlink:href="#hole" x="130" y="84"/><use xlink:href="#hole" x="158.5" y="84"/><use xlink:href="#hole" x="187" y="84"/>
-      <use xlink:href="#hole" x="265.5" y="39.5"/><use xlink:href="#hole" x="296.5" y="39.5"/><use xlink:href="#hole" x="327.5" y="39.5"/>
-      <use xlink:href="#hole" x="265.5" y="100"/><use xlink:href="#hole" x="296.5" y="100"/><use xlink:href="#hole" x="327.5" y="100"/>
+      <use xlink:href="#hole" x="12" y="40"/><use xlink:href="#hole" x="40.5" y="40"/><use xlink:href="#hole" x="69" y="40"/><use xlink:href="#hole" x="97.5" y="40"/><use xlink:href="#hole" x="126" y="40"/><use xlink:href="#hole" x="154.5" y="40"/><use xlink:href="#hole" x="183" y="40"/>
+      <use xlink:href="#hole" x="12" y="84"/><use xlink:href="#hole" x="40.5" y="84"/><use xlink:href="#hole" x="69" y="84"/><use xlink:href="#hole" x="97.5" y="84"/><use xlink:href="#hole" x="126" y="84"/><use xlink:href="#hole" x="154.5" y="84"/><use xlink:href="#hole" x="183" y="84"/>
+      <use xlink:href="#hole" x="250.5" y="36.5"/><use xlink:href="#hole" x="294.5" y="36.5"/><use xlink:href="#hole" x="338.5" y="36.5"/>
+      <use xlink:href="#hole" x="250.5" y="97"/><use xlink:href="#hole" x="294.5" y="97"/><use xlink:href="#hole" x="338.5" y="97"/>
     </g>
     <!-- section line A-A through row 1 -->
     <line x1="-6" y1="56" x2="386" y2="56" stroke="#3060c0" stroke-width="0.35" stroke-dasharray="6 2 1.5 2"/>
