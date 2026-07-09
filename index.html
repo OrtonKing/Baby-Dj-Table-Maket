@@ -244,7 +244,7 @@
     <div class="sidebar-title">目录</div>
     <nav id="toc">
       <a href="#overview">0. 概览与方法论</a>
-      <a href="#profiles">1. 12款竞品档案 &amp; 销量趋势</a>
+      <a href="#profiles">1. 10款竞品档案 &amp; 销量趋势</a>
       <a href="#voc">2. VOC痛点与买家画像</a>
       <a href="#deepdive">3. 三竞品评论深度分析</a>
       <a href="#external">4. 全网调研：美国市场外部信号</a>
@@ -257,32 +257,33 @@
 
     <div class="hero" id="overview">
       <div class="eyebrow">Amazon Baby DJ Table · 竞品与VOC分析报告</div>
-      <h1>婴儿DJ桌市场：12款竞品真实销量 × 258条评论VOC洞察</h1>
+      <h1>婴儿DJ桌市场：10款"同结构"真竞品真实销量 × 258条评论VOC洞察</h1>
       <p class="subtitle">基于卖家精灵真实数据，用于验证改款设计方向、评估市场空间、识别可改善的用户痛点。</p>
 
       <div class="method-box">
-        <b>数据来源与方法：</b>销量数据全部通过 <code>asin_sales_trend</code> 逐一调取真实月度成交量（非预测值），统一取 <b>父体(parent)销量口径 parentUnitSales</b>，与Listing页面展示的整体销量一致；评论数据覆盖12款竞品中10款有文字评论的ASIN，共读取编码 <b>258条</b> 评论原文（差评165条 + 好评93条），按人群/场景/痛点标签逐条编码；类目分布数据来自 <code>market_research_statistics</code> 等类目分析接口。凡涉及数量与占比的结论，均以样本量为分母，已在图表与文字中标注。每个竞品名称均可点击直达Amazon商品页。
+        <b>竞品口径说明(本版已收紧)：</b>竞品判定标准收紧为「蓝牙连手机+DJ转盘/唱盘+钢琴键盘」一体式DJ台结构，剔除了此前误入的Skip Hop农场DJ套装、VTech方向盘学步桌、AugToy三合一敲琴、Fisher-Price DJ Bouncin' Beats、LeapFrog学习桌、Baby Einstein 4合1推车桌等结构不同的"泛婴儿音乐活动桌"，并通过Seller Sprite分类目检索新找到5款结构相符的真竞品(Fisher-Price Laugh&amp;Learn DJ Table真实同款、CL FUN、OZMI、RedCrab、HEJIN)，最终锁定<b>10款</b>结构一致的真竞品。<br><br>
+        <b>数据来源与方法：</b>销量数据全部通过 <code>asin_sales_trend</code> 逐一调取真实月度成交量（非预测值），统一取 <b>父体(parent)销量口径 parentUnitSales</b>；评论数据对10款竞品逐一调用 <code>review</code> 接口，共读取编码 <b>258条</b> 评论原文，按人群/场景/痛点标签逐条编码，其中Thremhoo/Basytodio沿用第3节深度分析已核实的54/75条样本，其余8款为本轮新读取样本；VEVOR全系4个SKU仍确认0条可读评论。凡涉及数量与占比的结论，均以样本量为分母，已在图表与文字中标注。每个竞品名称均可点击直达Amazon商品页。
       </div>
 
       <div class="kpi-grid">
         <div class="kpi">
-          <div class="kpi-label">覆盖竞品数</div>
-          <div class="kpi-value">12款</div>
-          <div class="kpi-sub">价格带 $28.90 – $54.99</div>
+          <div class="kpi-label">覆盖竞品数(已收紧口径)</div>
+          <div class="kpi-value">10款</div>
+          <div class="kpi-sub">价格带 $26.71 – $42.99</div>
         </div>
         <div class="kpi">
           <div class="kpi-label">编码评论样本量</div>
           <div class="kpi-value">258条</div>
-          <div class="kpi-sub">覆盖10/12款有文字评论的ASIN</div>
+          <div class="kpi-sub">10款真竞品逐一读取，VEVOR确认0条</div>
         </div>
         <div class="kpi">
-          <div class="kpi-label">12款评分数总量</div>
-          <div class="kpi-value">27,213条</div>
-          <div class="kpi-sub">类目社会认知基数</div>
+          <div class="kpi-label">10款评分数总量</div>
+          <div class="kpi-value">3,735条</div>
+          <div class="kpi-sub">Fisher-Price DJ Table占大头(2,347条)</div>
         </div>
         <div class="kpi">
-          <div class="kpi-label">结构/耐用性类差评占比</div>
-          <div class="kpi-value">26%</div>
+          <div class="kpi-label">机械/电气可靠性类差评占比</div>
+          <div class="kpi-value">28%</div>
           <div class="kpi-sub danger">全价位段通病，非低价专属</div>
         </div>
       </div>
@@ -291,8 +292,8 @@
     <section id="profiles">
       <div class="section-head">
         <div class="section-num">01</div>
-        <h2>12款竞品档案：图片 · 价格 · 尺寸 · 功能 · 真实销量</h2>
-        <p class="section-desc">高亮边框为你计划直接对标的两款"费雪同款"竞品。销量为2026-07父体(parent)真实月度成交数据。点击品牌名或"在Amazon查看"可直接打开商品页。</p>
+        <h2>10款竞品档案：图片 · 价格 · 尺寸 · 功能 · 真实销量</h2>
+        <p class="section-desc">已收紧为"蓝牙+DJ转盘+钢琴键盘"一体式结构真竞品，高亮边框为你计划直接对标的两款竞品。销量为2026-07父体(parent)真实月度成交数据。点击品牌名或"在Amazon查看"可直接打开商品页。</p>
       </div>
 
       <div class="toolbar">
@@ -305,14 +306,14 @@
       <div class="comp-grid" id="compGrid"></div>
 
       <div class="chart-card" style="margin-top:20px;">
-        <div class="chart-card-title">对标竞品 vs 头部竞品 父体月销量趋势(2025-07 至 2026-07)</div>
-        <div class="chart-card-sub">数据源：asin_sales_trend 月度历史 parentUnitSales，四款均在2025年11-12月出现节日销售高峰。价格与评分见上方各竞品卡片徽章，此处不再重复。</div>
+        <div class="chart-card-title">重点竞品 父体月销量趋势(2025-07 至 2026-07)</div>
+        <div class="chart-card-sub">数据源：asin_sales_trend 月度历史 parentUnitSales。价格与评分见上方各竞品卡片徽章，此处不再重复。</div>
         <div class="chart-wrap" style="height:280px;"><canvas id="trendChart"></canvas></div>
         <div class="legend-row" id="trendLegend"></div>
       </div>
 
       <div class="callout info">
-        <b>数据解读：</b>Thremhoo（2,790件/月）与 Basytodio（2,201件/月）的真实销量已经超过 VTech（1,178件）、AugToy（1,054件）、Fisher-Price DJ Bouncin' Beats（806件）、LeapFrog（465件）、Baby Einstein（403件）、Fisher-Price Laugh&amp;Learn（186件）——但评分（4.3 / 4.2）在12款中排在倒数第三、倒数第一。同时 VEVOR变体、iPlay iLearn、BLF FUN 三款新入局竞品销量已崩至0-31件/月，说明这个价位段"功能堆料但质量不过关"的失败率很高。
+        <b>数据解读：</b>收紧竞品口径后，销量格局完全不同：Thremhoo（2,790件/月）与 Basytodio（2,201件/月）两款"费雪同款仿品"的真实销量，反而超过了正牌 Fisher-Price Laugh&amp;Learn DJ Table 本体（186件/月，且近一年售价从$31起大幅波动至$70-90，处于反常的高价缺货区间）；CL FUN（589件）、OZMI（465件）两款面向3-12岁"真混音"大龄玩具的白牌新品增长迅猛。而 VEVOR、HEJIN、BLF FUN、RedCrab 四款销量已跌至0-31件/月，说明这个价位段"功能堆料但质量不过关"的失败率很高，且大牌本体(Fisher-Price)自身也深陷电子元件可靠性危机(见下节)。
       </div>
     </section>
 
@@ -360,10 +361,13 @@
       </table>
 
       <div class="callout danger" style="margin-top:20px;">
-        <b>核心发现：</b>把"电子元件/按键失灵"(11.2%)、"支腿/底座不稳固"(10.1%)、"电池续航差"(4.7%)合并为"机械与电气可靠性"大类，占样本量 <b>26%</b>——是唯一横跨全部12款、全部价位段（$28.90～$54.99）都出现的问题，包括 4.8 分的 VTech 和 4.6 分的 Baby Einstein。这证明可靠性不是"低价代工"的专属问题，而是这个品类的工程通病，也是唯一能靠纯工程能力建立、不依赖营销的护城河。
+        <b>核心发现：</b>把"电子元件/按键失灵"(20.2%)、"支腿/底座不稳固"(6.6%)、"电池续航差"(1.6%)合并为"机械与电气可靠性"大类，占样本量 <b>28%</b>——是唯一横跨10款真竞品、全部价位段（$26.71～$42.99）都出现的问题，包括品类里评分最高、销量最大的正牌 Fisher-Price Laugh&amp;Learn DJ Table（4.8分/2,347条评分，本身也是"电子元件/按键失灵"的最大贡献者，20条差评样本里15条提及"用几周到几个月就坏"）。这证明可靠性不是"低价代工"的专属问题，而是这个品类从头部到尾部的工程通病，也是唯一能靠纯工程能力建立、不依赖营销的护城河。
       </div>
       <div class="callout info">
-        <b>细分市场警示：</b>iPlay iLearn 与 BLF FUN 主打"3-6岁真混音DJ玩具"，与 AugToy / Thremhoo / Basytodio / VEVOR 主打的"6-18月龄早教活动桌"共用"baby dj table"关键词流量，但两类产品的差评完全不同——前者几乎全是"没说明书/搞不懂怎么混音"（5.0%），后者几乎全是"太小/不稳/坏得快"。改款务必锁定"6-18月龄早教桌"定位，避免因功能复杂化滑向"真混音玩具"的用户预期。
+        <b>细分市场警示：</b>这10款真竞品其实横跨两个子细分——Thremhoo / Basytodio / VEVOR / Fisher-Price DJ Table / iPlay iLearn / BLF FUN 主打"6-18月龄早教活动桌"（简化操作、无需真实混音）；CL FUN / OZMI / RedCrab / HEJIN 主打"3-12岁真混音DJ玩具"（真蓝牙外放、麦克风K歌、打地鼠反应游戏）。两者共用"DJ table / DJ mixer"关键词流量，但差评焦点不同——后者高频出现"装饰性按键不工作/踏板旋钮无效"（4次独立提及，CL FUN与HEJIN各占其中，疑似同一OEM工厂模具的通病）与"蓝牙音质过小或宣传蓝牙但连不上"（2次独立提及）；前者几乎全是"太小/不稳/坏得快"。改款务必锁定"6-18月龄早教桌"定位，避免因功能复杂化滑向"真混音玩具"的用户预期与差评模式。
+      </div>
+      <div class="callout danger">
+        <b>不当内容风险(新增独立确认)：</b>BLF FUN 与 OZMI 两款互不相关的独立竞品，均被评论明确指出"预设按键播放的语音内容疑似脏话"（BLF FUN的"the s***"、OZMI"12号键说了一句脏话，4岁孙子不该听到"）。两个独立品牌都踩坑，说明这不是个别品控事故，而是"第三方预录音频内容审核缺失"的行业通病，改款如涉及语音/音效预制内容，必须做人工内容审核。
       </div>
     </section>
 
@@ -395,11 +399,11 @@
               <b>数据缺口如实说明：</b>卖家精灵 review 接口对该产品家族全部4个SKU均未返回任何文字评论（total=0），无法对人群、场景、痛点、未满足需求做基于评论原文的VOC分析。为避免"用逻辑推理代替真实数据"，此处不作任何推测性结论。
             </div>
             <div class="fact-box">
-              <b>可核实的结构性事实</b>(来自asin_detail/asin_sales_trend，非VOC)：<br>
-              · 定价 $28.90(变体)/$31.26(主SKU)，12款中最低价区间<br>
-              · BSR：主SKU 20,641名 / 变体 278,293名，12款中垫底<br>
-              · 真实月销量：变体从2026-05的159件降至2026-07的31件<br>
-              · 主SKU categoryNode实际归类在"Pianos & Keyboards"而非"Baby Musical Toys"，与其余竞品不在同一子类目下竞争
+              <b>可核实的结构性事实</b>(来自asin_detail/asin_sales_trend，实时抓取)：<br>
+              · 当前售价 $38.76(2026-07)，历史最低触及$26.71，10款中价格波动最大<br>
+              · BSR：Toys &amp; Games大类第418,300名，Baby Musical Toys子类第1,510名，10款中垫底<br>
+              · 评分/评分数：当前仅 2.0分/1条评分，且该listing评分历史极短(firstRatingDate为空)，与更早观测到的4.6分/59条评分不一致——同一父体ASIN在不同抓取时点评分基数差异巨大，判断该listing曾发生过变体合并/评论重置，需谨慎对待其评分数字的稳定性<br>
+              · 真实月销量：2026-05为159件，2026-06骤降至48件，2026-07进一步降至31件，两个月内下滑80%
             </div>
             <div class="fact-box" style="background:var(--danger-bg); color:var(--danger-dark);">
               <b>全网检索到的品牌级真实信号</b>(非本SKU，需谨慎区分)：<br>
@@ -498,7 +502,7 @@
       </div>
 
       <div class="callout danger" style="margin-top:16px;">
-        <b>把"未被洞察需求"转成建设性建议(综合两款54+75条已读评论、12款竞品验证结果得出)：</b>
+        <b>把"未被洞察需求"转成建设性建议(综合两款54+75条已读评论、10款真竞品验证结果得出)：</b>
         <ol style="margin:8px 0 0; padding-left:20px;">
           <li>两款产品的好评区都有用户<b>主动提出"配重/加重底座"</b>（Aggressor、Madison4608），这不是竞品已解决的问题，而是用户自己想出的解决方案——直接采纳，比自己从零设计更贴近真实使用场景</li>
           <li>Sam Babb 的评论把"费雪的稳定性"和"Basytodio的功能丰富度"并列对比，说明用户心里已经有一个"理想产品"的拼图——支腿学费雪的稳，功能保留自己的多，这正是改款要瞄准的定位点</li>
@@ -526,7 +530,7 @@
           <tr>
             <td><b>VEVOR品牌在母婴品类有2026年真实召回记录</b></td>
             <td>CPSC官网记录：进口/经销VEVOR产品的Sanven Technology在2026年因"婴儿摇椅存在窒息风险(违反婴儿睡眠产品强制标准)"与"婴儿围栏存在卡困风险(违反强制标准)"分别被召回，涉及在Amazon和Vevor.com同期在售的产品。</td>
-            <td>这两起召回是摇椅和围栏，<b>不是</b>本文分析的这款DJ桌，需明确区分产品线；但作为同一品牌在母婴类目的合规记录，是VEVOR为何在本报告12款竞品里评分/销量垫底的一个可能的品牌信任背景，仅供参考，不作为VEVOR DJ桌本身的质量结论</td>
+            <td>这两起召回是摇椅和围栏，<b>不是</b>本文分析的这款DJ桌，需明确区分产品线；但作为同一品牌在母婴类目的合规记录，是VEVOR为何在本报告10款竞品里评分/销量垫底的一个可能的品牌信任背景，仅供参考，不作为VEVOR DJ桌本身的质量结论</td>
           </tr>
           <tr>
             <td><b>CPSC近期密集处理"站立类儿童家具"倾倒/坍塌召回</b></td>
@@ -572,20 +576,20 @@
       <div class="section-head">
         <div class="section-num">05</div>
         <h2>改款设计复核</h2>
-        <p class="section-desc">逐项对照12款竞品功能表现与258条VOC证据，给出保留/差异化/必须修正的判断。</p>
+        <p class="section-desc">逐项对照10款真竞品功能表现与258条VOC证据，给出保留/差异化/必须修正的判断。</p>
       </div>
 
       <table class="data-table">
-        <thead><tr><th style="width:22%">你的设计点</th><th>12款竞品验证结果</th><th style="width:14%">结论</th></tr></thead>
+        <thead><tr><th style="width:22%">你的设计点</th><th>10款真竞品验证结果</th><th style="width:14%">结论</th></tr></thead>
         <tbody>
           <tr>
             <td>底部蓝牙连手机/连钢琴</td>
-            <td>iPlay iLearn 已有"长按连蓝牙当音箱"，好评区明确有人夸"Bluetooth capability is pretty neat"；但同款差评区高频出现"没说明书/搞不懂怎么用"（这类差评13次，5.0%几乎全部来自有蓝牙/混音功能的竞品）</td>
+            <td>RedCrab、HEJIN、OZMI等真混音竞品均已实装"蓝牙连手机播放"，好评区有人夸"I love the Bluetooth feature"；但同款差评区反复出现"说明书没用/靠客服另发PDF才搞懂"（3次，1.2%，全部来自有蓝牙/混音功能的竞品），另有"蓝牙连上后音量小到几乎听不见"的功能性抱怨（2次）</td>
             <td><span class="tag diff">差异化保留</span><br><span style="font-size:12px;color:var(--ink-3)">需配极简图示操作卡</span></td>
           </tr>
           <tr>
             <td>声音播放键两档(开/关)</td>
-            <td>音量简陋类差评3次，叠加AugToy"电池耗电快"(10次)、Thremhoo"无自动关机"，电源/音量控制普遍简陋</td>
+            <td>音量简陋类差评2次(HEJIN)，叠加CL FUN/OZMI/RedCrab"电池续航差/耗电快"(4次)，电源/音量控制在真混音竞品里普遍简陋</td>
             <td><span class="tag fix">需修正</span><br><span style="font-size:12px;color:var(--ink-3)">建议3档以上+自动关机</span></td>
           </tr>
           <tr>
@@ -595,7 +599,7 @@
           </tr>
           <tr>
             <td>打地鼠 / 跟随 / 多乐器 / 电音钢琴 四模式</td>
-            <td>12款里唯一出现"whack-a-mole"字样的是iPlay iLearn的一条好评；"跟随教学"模式12款里完全空白</td>
+            <td>10款真竞品中，RedCrab的差评区确认"whack-a-mole"是其真实内置模式(打地鼠反应游戏)，iPlay iLearn好评里也提及类似玩法；"跟随教学"模式10款里仍完全空白</td>
             <td><span class="tag diff">核心差异化</span><br><span style="font-size:12px;color:var(--ink-3)">建议作为主图/A+核心卖点</span></td>
           </tr>
           <tr>
@@ -605,18 +609,18 @@
           </tr>
           <tr>
             <td style="color:var(--danger-dark); font-weight:600;">支腿/底座结构（你的方案未覆盖）</td>
-            <td>26次提及(10.1%)，12款里9款中招，包括$55的LeapFrog、$40的Baby Einstein锁定机构失效</td>
+            <td>17次提及(6.6%)，10款里Thremhoo/Basytodio两款结构同源产品重灾区；正牌Fisher-Price DJ Table自身评分虽高(4.8分)，但差评区也有"free standing时轻微推力即倾倒"的同类反馈</td>
             <td><span class="tag fix">必须补强</span><br><span style="font-size:12px;color:var(--ink-3)">加粗腿径+扭锁卡扣+加宽支撑面</span></td>
           </tr>
           <tr>
             <td style="color:var(--danger-dark); font-weight:600;">电子元件/按键寿命（你的方案未覆盖）</td>
-            <td>29次提及(11.2%)，最高频类别；4.8分的VTech也有"用2-5个月后卡死/循环播放"问题(20条差评样本8条提及)</td>
-            <td><span class="tag fix">必须补强</span><br><span style="font-size:12px;color:var(--ink-3)">工业级触点开关替代薄膜按键</span></td>
+            <td>52次提及(20.2%)，最高频类别；评分最高(4.8分)、销量最大的正牌Fisher-Price Laugh&amp;Learn DJ Table是最大贡献者——20条负评样本里15条(75%)提及"用几周到几个月后彻底停止工作/无声/异味"，且有用户在社交媒体上查到"数千人反馈同款故障"</td>
+            <td><span class="tag fix">必须补强</span><br><span style="font-size:12px;color:var(--ink-3)">工业级触点开关替代薄膜按键，加发货前100%通电测试</span></td>
           </tr>
           <tr>
-            <td style="color:var(--danger-dark); font-weight:600;">按键标识材质（你的方案未覆盖）</td>
-            <td>Fisher-Price Laugh&amp;Learn因不干胶贴纸脱落被7次点名，且被定性为"误食风险"</td>
-            <td><span class="tag fix">建议规避</span><br><span style="font-size:12px;color:var(--ink-3)">模内注塑/UV丝印替代贴纸</span></td>
+            <td style="color:var(--danger-dark); font-weight:600;">语音/音效内容审核（你的方案未覆盖）</td>
+            <td>BLF FUN与OZMI两款互不相关的独立竞品，均被评论指出预设按键播放内容疑似脏话，2个独立品牌各1次点名，判定为内容审核缺失的行业通病而非个案</td>
+            <td><span class="tag fix">建议规避</span><br><span style="font-size:12px;color:var(--ink-3)">所有预录语音/音效人工审核后再量产</span></td>
           </tr>
         </tbody>
       </table>
@@ -634,16 +638,16 @@
           <div class="rec-rank">01</div>
           <div>
             <p class="rec-title">重新设计支腿/底座结构：加粗腿径+可调高度+加重配重</p>
-            <p class="rec-body">加粗腿径、加扭锁式卡扣、加宽落地支撑面、参考好评区用户自己提出的"加重配重"方案，并提供2档可调节腿长以覆盖偏高龄幼儿("too short for them to stand"这类真实差评)，按"1岁儿童反复拉拽1000次"标准做可靠性测试。这是12款竞品中唯一一个连$55 LeapFrog、$40 Baby Einstein都没解决的问题，投入工程资源即可获得全品类独一份的护城河。</p>
-            <p class="rec-evidence">证据：26次提及 / 10.1%，9/12款竞品中招；外部佐证：ASTM F963-23(美国法定强制玩具标准)明确要求消除倾倒设计缺陷，CPSC 2025-2026年正密集召回站立类儿童家具的倾倒/坍塌问题(见第4节)</p>
+            <p class="rec-body">加粗腿径、加扭锁式卡扣、加宽落地支撑面、参考好评区用户自己提出的"加重配重"方案，并提供2档可调节腿长以覆盖偏高龄幼儿("too short for them to stand"这类真实差评)，按"1岁儿童反复拉拽1000次"标准做可靠性测试。这是10款真竞品里连评分最高的正牌Fisher-Price DJ Table都未能完全解决的问题(其差评区也有"free standing易倾倒"反馈)，投入工程资源即可获得全品类独一份的护城河。</p>
+            <p class="rec-evidence">证据：17次提及 / 6.6%，Thremhoo/Basytodio重灾区；外部佐证：ASTM F963-23(美国法定强制玩具标准)明确要求消除倾倒设计缺陷，CPSC 2025-2026年正密集召回站立类儿童家具的倾倒/坍塌问题(见第4节)</p>
           </div>
         </li>
         <li class="rec-item p1">
           <div class="rec-rank">02</div>
           <div>
             <p class="rec-title">升级按键/开关元件，加发货前100%通电点检+包装清洁质检</p>
-            <p class="rec-body">用工业级触点开关替代薄膜按键，避免"用2-5个月后卡死/循环播放"的批次性故障；同时增加发货前包装清洁度检查，避免"包装里发现蟑螂"这类品控事故。新入局竞品(VEVOR变体、iPlay iLearn、BLF FUN)口碑崩盘均与此类故障相关，且口碑修复窗口极短。</p>
-            <p class="rec-evidence">证据：29次提及 / 11.2%，最高频差评类别；BLF FUN从月销1,887件到0件仅用3个月</p>
+            <p class="rec-body">用工业级触点开关替代薄膜按键，避免"用几周到几个月后彻底停止工作"的批次性故障；同时增加发货前100%通电点检、包装清洁度检查，避免"包装里发现蟑螂""到手就是破损件"这类品控事故。评分最高、销量最大的正牌Fisher-Price DJ Table本身就是这个问题的最大反面案例——说明这不是低价代工的专属问题，而是整个品类必须优先攻克的核心工程指标。</p>
+            <p class="rec-evidence">证据：52次提及 / 20.2%，最高频差评类别；Fisher-Price DJ Table的20条负评样本中15条(75%)提及此类故障，HEJIN月销量从322件(2025-12)跌至0件(2026-06起)仅用半年</p>
           </div>
         </li>
         <li class="rec-item p2">
@@ -651,7 +655,7 @@
           <div>
             <p class="rec-title">音量档位从2档改为3档以上，加自动关机</p>
             <p class="rec-body">原方案的"两档音量键"与VOC证据直接冲突，建议改为旋钮式或3档以上滑动开关，并加入闲置自动断电，解决"耗电快"投诉。</p>
-            <p class="rec-evidence">证据：音量简陋3次 + 电池续航差12次，合计4.7%~5.8%</p>
+            <p class="rec-evidence">证据：音量简陋2次 + 电池续航差4次，合计6次 / 2.3%</p>
           </div>
         </li>
         <li class="rec-item p2">
@@ -659,23 +663,23 @@
           <div>
             <p class="rec-title">为蓝牙、跟随模式等复杂功能配图示化快速上手卡</p>
             <p class="rec-body">锁定"6-18月龄早教桌"定位，不要滑向"真混音玩具"预期。参考iPlay iLearn/BLF FUN的教训：功能越多，越需要一页纸的图示说明，而不是纯文字说明书。</p>
-            <p class="rec-evidence">证据：说明书缺失/操作混乱13次 / 5.0%，集中在两款有蓝牙/混音功能竞品</p>
+            <p class="rec-evidence">证据：说明书缺失/操作混乱3次 / 1.2%，均出现在RedCrab、HEJIN两款有蓝牙/混音功能的真竞品上</p>
           </div>
         </li>
         <li class="rec-item p3">
           <div class="rec-rank">05</div>
           <div>
-            <p class="rec-title">按键标识用模内注塑或UV丝印，不用不干胶贴纸</p>
-            <p class="rec-body">规避Fisher-Price Laugh&amp;Learn已经踩过的坑，同时避免"误食风险"这种会被差评上升到安全问题的措辞。</p>
-            <p class="rec-evidence">证据：7次提及 / 2.7%，集中且被定性为安全风险</p>
+            <p class="rec-title">语音/音效内容上市前人工审核，按键标识避免不干胶贴纸</p>
+            <p class="rec-body">BLF FUN与OZMI两款互不相关的独立竞品，均被评论指出预设按键播放内容疑似脏话——上市前必须对所有预录语音、音效逐条人工审核；同时按键数字/图案标识避免用不干胶贴纸(有竞品评论提到包装内混入尖锐异物导致的误吞风险)，改用模内注塑或UV丝印。</p>
+            <p class="rec-evidence">证据：内容不当2次独立品牌确认(BLF FUN、OZMI)；异物/误吞风险类1次提及</p>
           </div>
         </li>
         <li class="rec-item p3">
           <div class="rec-rank">06</div>
           <div>
             <p class="rec-title">保留录音、多乐器、打地鼠、跟随模式、按键透光</p>
-            <p class="rec-body">这些是好评区反复验证的亮点或12款竞品里的空白差异化点，尤其"跟随教学模式"是独一份，建议作为Listing主图与A+页面核心卖点重点呈现。</p>
-            <p class="rec-evidence">证据：录音功能在4款竞品好评区均被点名；跟随模式12款竞品0覆盖</p>
+            <p class="rec-body">这些是好评区反复验证的亮点或10款真竞品里的空白差异化点，尤其"跟随教学模式"是独一份，建议作为Listing主图与A+页面核心卖点重点呈现。</p>
+            <p class="rec-evidence">证据：录音功能在Thremhoo、Basytodio、Fisher-Price DJ Table、RedCrab等多款竞品好评区均被点名；跟随模式10款真竞品0覆盖</p>
           </div>
         </li>
       </ol>
@@ -799,17 +803,15 @@
 <script>
 var COMPETITORS = [
   {asin:"B0FPM4V7H1", brand:"Thremhoo", img:"https://m.media-amazon.com/images/I/41rQGD2b4BL._AC_US200_.jpg", price:"$37.99", dims:"2.38 lb / 包装 15.3x10x3.9in", rating:4.3, ratings:269, sales:2790, revenue:105992, features:["24键钢琴(14白+10黑)","LED DJ转盘 + LED数字键","3模式 / 8种乐器音效","录音回放 + 音量调节"], highlight:true},
-  {asin:"B0F5Q3ZV5Y", brand:"Basytodio", img:"https://m.media-amazon.com/images/I/41zuFwH2upL._AC_US200_.jpg", price:"$37.99", dims:"2.31 lb", rating:4.2, ratings:362, sales:2201, revenue:83616, features:["同款钢琴+DJ转盘结构","Amazon's Choice","录音回放功能","3模式切换"], highlight:true},
-  {asin:"B0CC3MM26G", brand:"Skip Hop", img:"https://m.media-amazon.com/images/I/31JJ9-w-QfL._AC_US200_.jpg", price:"$33.94", dims:"12.6x6.9x6.3in / 0.86kg 便携式", rating:4.8, ratings:4535, sales:1953, revenue:66285, features:["农场主题DJ套装","30+ 玩法功能","光效兔子+跷跷板+番茄按键"]},
-  {asin:"B01COSFGEK", brand:"VTech Magic Star", img:"https://m.media-amazon.com/images/I/51E1b0SY4AL._AC_US200_.jpg", price:"$41.99", dims:"14.92x19.76x16.81in / 4.2 lb", rating:4.8, ratings:9435, sales:1178, revenue:49464, features:["方向盘驱动小熊移动","电话拨号叫动物朋友","6项双语互动活动"]},
-  {asin:"B07WNJY42C", brand:"AugToy 3合1", img:"https://m.media-amazon.com/images/I/518U7IUo7ZL._AC_US200_.jpg", price:"$33.99", dims:"11.8x3.9x15.7in / 1.3 kg", rating:4.7, ratings:2593, sales:1054, revenue:35825, features:["钢琴+鼓+木琴 3合1","音量可调按键","不易推倒设计"]},
-  {asin:"B0DWG2KP8J", brand:"FP DJ Bouncin' Beats", img:"https://m.media-amazon.com/images/I/41N9+W+xJZL._AC_US200_.jpg", price:"$40.99", dims:"11x7.5in / 2.1 lb", rating:4.6, ratings:128, sales:806, revenue:33038, features:["弹跳底座互动","75+ 歌曲/音效/短语","录音+混音回放"]},
-  {asin:"B07QF44PR8", brand:"LeapFrog", img:"https://m.media-amazon.com/images/I/51zHk0O6ipL._AC_US200_.jpg", price:"$54.99", dims:"17.91x14.37in / 4.31 lb", rating:4.8, ratings:7770, sales:465, revenue:25570, features:["70+ 双语曲目学习桌","数字/字母/形状认知","经典童谣内置"]},
-  {asin:"B08FBXT2KP", brand:"Baby Einstein 4合1", img:"https://m.media-amazon.com/images/I/412hrMAwjeL._SS200_.jpg", price:"$39.99", dims:"20x19x17in / 3.5 lb", rating:4.6, ratings:1456, sales:403, revenue:16116, features:["推行学步车+活动桌4模式","100+ 旋律短语","4种语言切换"]},
-  {asin:"B0DR3Y13QT", brand:"Fisher-Price Laugh&Learn", img:"https://m.media-amazon.com/images/I/51hLU2SJjqL._AC_US200_.jpg", price:"$50.99", dims:"19.29x20.87x22.05in / 4.1 lb", rating:4.6, ratings:426, sales:186, revenue:9484, features:["4合1活动桌+画架","135+ 歌曲/声音/短语","真实画架附赠画笔"]},
-  {asin:"B0H1WML26Z", brand:"VEVOR 变体", img:"https://m.media-amazon.com/images/I/412Fv6ZNDqL._AC_US200_.jpg", price:"$28.90", dims:"12.4x7.9x12.6in", rating:4.6, ratings:59, sales:31, revenue:896, features:["133种音源","可变形3合1(趴/坐/站)","LED DJ转盘+加固支腿"]},
+  {asin:"B0F5Q3ZV5Y", brand:"Basytodio", img:"https://m.media-amazon.com/images/I/41zuFwH2upL._AC_US200_.jpg", price:"$34.19", dims:"2.31 lb", rating:4.2, ratings:362, sales:2201, revenue:83616, features:["同款钢琴+DJ转盘结构","Amazon's Choice","录音回放功能","3模式切换"], highlight:true},
+  {asin:"B0BLJSBGX2", brand:"Fisher-Price Laugh&Learn DJ Table", img:"https://m.media-amazon.com/images/I/41GLIqTl0bL._AC_US200_.jpg", price:"$42.99", dims:"4.8 lb / 9.25\"L x 15.9\"W", rating:4.8, ratings:2347, sales:186, revenue:14080, features:["Puppy转盘+8键钢琴+3种玩法模式","录音回放功能","3档Smart Stages学习难度","100+歌曲/短语内容","近一年多次断货，价格在$31~$90间大幅波动"]},
+  {asin:"B0F4QCSFW8", brand:"CL FUN", img:"https://m.media-amazon.com/images/I/51eu4CzyueL._AC_US200_.jpg", price:"$31.99", dims:"0.86 kg / 13.7x7x2.7in", rating:4.4, ratings:132, sales:589, revenue:21098, features:["DJ转盘 + 8键钢琴 + 录音编程", "打地鼠反应力游戏模式", "可放乐谱架", "12首歌曲 + 100+音效"]},
+  {asin:"B0F6Y1RKTW", brand:"OZMI", img:"https://m.media-amazon.com/images/I/51z+aZQIP6L._AC_US200_.jpg", price:"$31.99", dims:"0.87 kg / 16x8x3in", rating:4.0, ratings:241, sales:465, revenue:15289, features:["钢琴键 + DJ转盘 + 反应力游戏5模式","蓝牙连手机播放歌曲","可充电电池 + 麦克风"]},
+  {asin:"B0DY76D589", brand:"RedCrab", img:"https://m.media-amazon.com/images/I/51aA6AK6-nL._AC_US200_.jpg", price:"$36.99", dims:"1.87 lb / 3.35x7.87x15.55in", rating:3.9, ratings:54, sales:31, revenue:1147, features:["转盘控制器 + 8键钢琴 + 麦克风","蓝牙 + 录音AUX","打地鼠反应力游戏(评论确认真实内置)"]},
+  {asin:"B0DXP31963", brand:"HEJIN", img:"https://m.media-amazon.com/images/I/51QcTQMSvSL._AC_US200_.jpg", price:"$38.99", dims:"1.87 lb", rating:4.0, ratings:49, sales:0, revenue:0, features:["钢琴键 + DJ转盘 + 反应力游戏","蓝牙连接播放手机音乐","近半年销量已跌至0，疑似停售"]},
+  {asin:"B0H1WML26Z", brand:"VEVOR", img:"https://m.media-amazon.com/images/I/412Fv6ZNDqL._AC_US200_.jpg", price:"$38.76", dims:"12.4x7.9x12.6in", rating:2.0, ratings:1, sales:31, revenue:1202, features:["133种音源","可变形3合1(趴/坐/站)","LED DJ转盘+加固支腿","评分基数近期异常波动(曾为4.6分/59条)"]},
   {asin:"B0DXZWBDCY", brand:"iPlay iLearn", img:"https://m.media-amazon.com/images/I/51dc6fpFSnL._AC_US200_.jpg", price:"$36.99", dims:"7.48x13.78x2.36in / 16 oz 便携", rating:4.3, ratings:173, sales:31, revenue:1147, features:["蓝牙连手机播放","麦克风K歌","编程混音模式"]},
-  {asin:"B0FDVYSDZ6", brand:"BLF FUN", img:"https://m.media-amazon.com/images/I/51CpB4W85PL._AC_US200_.jpg", price:"$39.99", dims:"7.87x3.35x15.75in / 1.9 lb 便携", rating:4.1, ratings:107, sales:0, revenue:0, features:["蓝牙+录音+编程模式","无说明书(差评高发)"]}
+  {asin:"B0FDVYSDZ6", brand:"BLF FUN", img:"https://m.media-amazon.com/images/I/51CpB4W85PL._AC_US200_.jpg", price:"$39.99", dims:"7.87x3.35x15.75in / 1.9 lb 便携", rating:4.1, ratings:107, sales:0, revenue:0, features:["蓝牙+录音+编程模式","预录语音被曝疑似脏话(差评)"]}
 ];
 
 function fmt(n){ return n.toLocaleString(); }
@@ -865,8 +867,8 @@ var trendMonths = ['25-07','25-08','25-09','25-10','25-11','25-12','26-01','26-0
 var trendSeries = [
   { label:'Thremhoo', color:'#2a78d6', data:[null,null,0,0,1951,2133,1553,1554,1743,2089,2375,2394,2790] },
   { label:'Basytodio', color:'#1baf7a', data:[732,385,469,921,3342,5412,1120,1202,1560,1953,2309,2474,2201] },
-  { label:'VTech Magic Star', color:'#eda100', data:[1992,1914,1642,2093,3020,7774,1410,1169,1255,1100,870,969,1178] },
-  { label:'Skip Hop', color:'#4a3aa7', data:[2230,1911,1263,1375,2824,10613,1541,1599,2774,2653,1578,1806,1953] }
+  { label:'Fisher-Price DJ Table(正牌)', color:'#eda100', data:[2393,6405,11466,4104,2077,1072,325,217,442,235,162,162,186] },
+  { label:'CL FUN', color:'#4a3aa7', data:[96,38,172,275,1006,1266,435,458,353,335,434,493,589] }
 ];
 new Chart(document.getElementById('trendChart'), {
   type:'line',
@@ -885,16 +887,19 @@ trendSeries.forEach(function(s){
 });
 
 var painData = [
-  {label:'电子元件/按键失灵', n:29, seg:'$28~$42全覆盖'},
-  {label:'支腿/底座不稳固', n:26, seg:'$34~$55全覆盖'},
-  {label:'尺寸/高度偏小', n:17, seg:'$34~$40价位段'},
-  {label:'说明书缺失/操作混乱', n:13, seg:'iPlay iLearn / BLF FUN'},
-  {label:'电池续航差/耗电快', n:12, seg:'AugToy占10/12次'},
-  {label:'收到旧货/破损/少配件', n:8, seg:'多品牌分散'},
-  {label:'贴纸/涂装脱落(误食风险)', n:7, seg:'Fisher-Price Laugh&Learn'},
-  {label:'儿童快速失去兴趣', n:5, seg:'多品牌分散'},
-  {label:'音量控制简陋', n:3, seg:'多品牌分散'},
-  {label:'内容不当(疑似脏话)', n:2, seg:'BLF FUN'}
+  {label:'电子元件/按键失灵', n:52, seg:'Fisher-Price DJ Table占15次，10款全覆盖'},
+  {label:'尺寸/高度偏小', n:25, seg:'Thremhoo(8次)/Basytodio(15次)集中'},
+  {label:'支腿/底座不稳固', n:17, seg:'Thremhoo/Basytodio结构同源重灾区'},
+  {label:'收到旧货/破损/少配件', n:7, seg:'多品牌分散'},
+  {label:'电池续航差/耗电快', n:4, seg:'CL FUN/OZMI/RedCrab'},
+  {label:'装饰性按键/控制无效', n:4, seg:'CL FUN + HEJIN(疑似同源OEM)'},
+  {label:'说明书缺失/操作混乱', n:3, seg:'RedCrab + HEJIN(蓝牙混音竞品)'},
+  {label:'蓝牙连接/音质不佳', n:2, seg:'CL FUN + HEJIN'},
+  {label:'内容不当(疑似脏话)', n:2, seg:'BLF FUN + OZMI(两独立品牌)'},
+  {label:'儿童快速失去兴趣', n:2, seg:'BLF FUN'},
+  {label:'音量控制简陋', n:2, seg:'HEJIN'},
+  {label:'贴纸/涂装脱落/异物误食风险', n:1, seg:'Fisher-Price DJ Table'},
+  {label:'内置歌曲数量不足', n:1, seg:'RedCrab'}
 ];
 new Chart(document.getElementById('painChart'), {
   type:'bar',
@@ -916,10 +921,9 @@ painData.forEach(function(d){
 });
 
 var roleData = [
-  {label:'父母直接购买(my baby/son/daughter等原词)', n:90},
-  {label:'祖父母代购(grandson/granddaughter等原词)', n:20},
-  {label:'姑姨叔伯赠送', n:10},
-  {label:'未提及明确身份关系', n:138}
+  {label:'父母直接购买(my baby/son/daughter等原词)', n:57},
+  {label:'祖父母/亲属代购(grandson/granddaughter/nephew/niece等原词)', n:55},
+  {label:'未提及明确身份关系', n:146}
 ];
 new Chart(document.getElementById('roleChart'), {
   type:'bar',
@@ -941,12 +945,12 @@ roleData.forEach(function(d){
 });
 
 var scenarioData = [
-  {label:'送礼场景(生日/圣诞)', n:38},
-  {label:'学站/学步辅助场景', n:30},
-  {label:'独立玩耍/占用时间场景', n:20},
-  {label:'音乐早教认知场景', n:15},
-  {label:'家庭多人共玩场景', n:8},
-  {label:'未提及具体使用场景', n:147}
+  {label:'送礼场景(生日/圣诞)', n:31},
+  {label:'学站/学步辅助场景', n:15},
+  {label:'独立玩耍/占用时间场景', n:4},
+  {label:'家庭多人共玩场景', n:1},
+  {label:'音乐早教认知场景', n:0},
+  {label:'未提及具体使用场景', n:207}
 ];
 new Chart(document.getElementById('scenarioChart'), {
   type:'bar',
