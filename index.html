@@ -248,8 +248,9 @@
       <a href="#voc">2. VOC痛点与买家画像</a>
       <a href="#deepdive">3. 三竞品评论深度分析</a>
       <a href="#external">4. 全网调研：美国市场外部信号</a>
-      <a href="#review">5. 改款设计复核</a>
-      <a href="#recommend">6. 结论与建设性建议</a>
+      <a href="#market">5. 关键词流量与类目结构</a>
+      <a href="#review">6. 改款设计复核</a>
+      <a href="#recommend">7. 结论与建设性建议</a>
     </nav>
   </aside>
 
@@ -262,7 +263,8 @@
 
       <div class="method-box">
         <b>竞品口径说明(本版已收紧)：</b>竞品判定标准收紧为「蓝牙连手机+DJ转盘/唱盘+钢琴键盘」一体式DJ台结构，剔除了此前误入的Skip Hop农场DJ套装、VTech方向盘学步桌、AugToy三合一敲琴、Fisher-Price DJ Bouncin' Beats、LeapFrog学习桌、Baby Einstein 4合1推车桌等结构不同的"泛婴儿音乐活动桌"，并通过Seller Sprite分类目检索新找到5款结构相符的真竞品(Fisher-Price Laugh&amp;Learn DJ Table真实同款、CL FUN、OZMI、RedCrab、HEJIN)，最终锁定<b>10款</b>结构一致的真竞品。<br><br>
-        <b>数据来源与方法：</b>销量数据全部通过 <code>asin_sales_trend</code> 逐一调取真实月度成交量（非预测值），统一取 <b>父体(parent)销量口径 parentUnitSales</b>；评论数据对10款竞品逐一调用 <code>review</code> 接口，共读取编码 <b>258条</b> 评论原文，按人群/场景/痛点标签逐条编码，其中Thremhoo/Basytodio沿用第3节深度分析已核实的54/75条样本，其余8款为本轮新读取样本；VEVOR全系4个SKU仍确认0条可读评论。凡涉及数量与占比的结论，均以样本量为分母，已在图表与文字中标注。每个竞品名称均可点击直达Amazon商品页。
+        <b>数据来源与方法：</b>销量数据全部通过 <code>asin_sales_trend</code> 逐一调取真实月度成交量（非预测值），统一取 <b>父体(parent)销量口径 parentUnitSales</b>；评论数据对10款竞品逐一调用 <code>review</code> 接口，共读取编码 <b>258条</b> 评论原文，按人群/场景/痛点标签逐条编码，其中Thremhoo/Basytodio沿用第3节深度分析已核实的54/75条样本，其余8款为本轮新读取样本；VEVOR全系4个SKU仍确认0条可读评论。凡涉及数量与占比的结论，均以样本量为分母，已在图表与文字中标注。每个竞品名称均可点击直达Amazon商品页。<br><br>
+        <b>抽样口径披露(重要)：</b>评论抽取时对1-3星差评做了优先覆盖(差评池覆盖率显著高于好评池)，因此"痛点提及次数/258"得到的占比会<b>系统性高估</b>真实用户中的痛点发生率——该占比应理解为"负面反馈内部的相对结构"(哪个问题比哪个问题更严重)，而不是"所有买家中有百分之几遇到该问题"。若需估计真实发生率，应以各产品的1-3星评分占比为上限做二次折算。本报告所有痛点排序结论不受此偏差影响(排序只依赖相对结构)，但绝对百分比数字请按上述口径解读。
       </div>
 
       <div class="kpi-grid">
@@ -360,7 +362,22 @@
         <tbody id="scenarioTableBody"></tbody>
       </table>
 
+      <div class="chart-card" style="margin-top:24px;">
+        <div class="chart-card-title">实际使用年龄分布：婴幼结构 vs 大龄混音结构（评论原词编码）</div>
+        <div class="chart-card-sub">仅统计评论中明确写出孩子年龄的原词(my 1 year old / 7year old nephew / 9-18 mos等)，共46次明确年龄提及 / 198条本轮实读评论。婴幼结构=Thremhoo/Basytodio/Fisher-Price DJ Table/iPlay iLearn/BLF FUN(实读120条，明确年龄31次)；大龄混音结构=CL FUN/OZMI/RedCrab/HEJIN(实读78条，明确年龄15次)。</div>
+        <div class="chart-wrap" style="height:260px;"><canvas id="ageChart"></canvas></div>
+      </div>
+
+      <table class="data-table" style="margin-top:16px;">
+        <thead><tr><th>年龄段</th><th class="num">婴幼结构5款提及</th><th class="num">大龄混音结构4款提及</th></tr></thead>
+        <tbody id="ageTableBody"></tbody>
+      </table>
+
       <div class="callout danger" style="margin-top:20px;">
+        <b>年龄定位裁决(本报告此前回避的关键问题)：</b>两类结构的真实买家年龄呈清晰双峰——婴幼结构产品31次年龄提及中<b>≤2岁占27次(87%)</b>，峰值在1岁("first birthday gift"是最高频购买动机)；大龄混音结构15次提及中<b>3岁以上占11次(73%)</b>。你的改款如果沿用Thremhoo/Basytodio的桌体结构，目标用户就是<b>9个月～2岁</b>，全部设计参数(桌面高度、按键尺寸、内容复杂度)应按此锁定；蓝牙功能的定位应是"父母连手机放歌哄娃"而非"孩子自己混音"，打地鼠模式应简化为大按键灯光追逐玩法。同时注意：<b>2岁是两个细分的重叠区</b>(大龄结构产品也有4次2岁买家提及，且其中有"说明书看不懂"的挫败反馈)，"2-3岁过渡段"目前两边产品都服务得不好，是一个真实存在但本报告暂无足够数据量化的潜在空隙。
+      </div>
+
+      <div class="callout danger" style="margin-top:16px;">
         <b>核心发现：</b>把"电子元件/按键失灵"(20.2%)、"支腿/底座不稳固"(6.6%)、"电池续航差"(1.6%)合并为"机械与电气可靠性"大类，占样本量 <b>28%</b>——是唯一横跨10款真竞品、全部价位段（$26.71～$42.99）都出现的问题，包括品类里评分最高、销量最大的正牌 Fisher-Price Laugh&amp;Learn DJ Table（4.8分/2,347条评分，本身也是"电子元件/按键失灵"的最大贡献者，20条差评样本里15条提及"用几周到几个月就坏"）。这证明可靠性不是"低价代工"的专属问题，而是这个品类从头部到尾部的工程通病，也是唯一能靠纯工程能力建立、不依赖营销的护城河。
       </div>
       <div class="callout info">
@@ -572,9 +589,61 @@
       </p>
     </section>
 
-    <section id="review">
+    <section id="market">
       <div class="section-head">
         <div class="section-num">05</div>
+        <h2>关键词流量与类目结构</h2>
+        <p class="section-desc">数据源：keyword_miner(关键词流量/竞价/垄断度) 与 market_research_statistics 等类目接口(Baby Musical Toys节点，销量Top100样本)，2026-07抓取。用于回答"流量从哪来、要花多少钱、新品还能不能进场"。</p>
+      </div>
+
+      <table class="data-table">
+        <thead><tr><th>关键词</th><th class="num">月搜索量</th><th class="num">月购买量</th><th class="num">SPR*</th><th class="num">PPC竞价</th><th class="num">竞品商品数</th><th class="num">点击集中度</th><th class="num">标题密度</th></tr></thead>
+        <tbody>
+          <tr><td><b>baby dj table</b>(核心词)</td><td class="num"><b>16,112</b></td><td class="num">140</td><td class="num">4</td><td class="num">$0.63</td><td class="num">160</td><td class="num">68.7%</td><td class="num">3</td></tr>
+          <tr><td>toddler dj table</td><td class="num">4,170</td><td class="num">36</td><td class="num">1</td><td class="num">$0.66</td><td class="num">140</td><td class="num">63.3%</td><td class="num">0</td></tr>
+          <tr><td>kids dj set</td><td class="num">2,617</td><td class="num">57</td><td class="num">2</td><td class="num" style="color:var(--danger);">$2.42</td><td class="num">251</td><td class="num">62.3%</td><td class="num">0</td></tr>
+          <tr><td>baby dj set</td><td class="num">2,324</td><td class="num">20</td><td class="num">1</td><td class="num">$0.95</td><td class="num">130</td><td class="num">65.3%</td><td class="num">1</td></tr>
+          <tr><td>baby piano toy</td><td class="num">1,840</td><td class="num">54</td><td class="num">2</td><td class="num">$0.61</td><td class="num">917</td><td class="num" style="color:var(--success-dark);">26.4%</td><td class="num">5</td></tr>
+          <tr><td>dj mixer for kids</td><td class="num">1,631</td><td class="num">39</td><td class="num">1</td><td class="num">$0.94</td><td class="num">203</td><td class="num">61.7%</td><td class="num">3</td></tr>
+          <tr><td>dj set for kids</td><td class="num">1,518</td><td class="num">39</td><td class="num">1</td><td class="num">$0.76</td><td class="num">163</td><td class="num">49.4%</td><td class="num">1</td></tr>
+          <tr><td>kids dj mixer</td><td class="num">918</td><td class="num">32</td><td class="num">1</td><td class="num">$0.93</td><td class="num">195</td><td class="num">68.8%</td><td class="num">9</td></tr>
+          <tr><td>toddler dj mixing table</td><td class="num">633</td><td class="num">3</td><td class="num">1</td><td class="num">$0.67</td><td class="num">106</td><td class="num">42.2%</td><td class="num">1</td></tr>
+        </tbody>
+      </table>
+      <p class="section-desc" style="font-size:12px; margin-top:8px;">*SPR = 冲到该关键词自然搜索首页所需的8天预估销量，越低代表上首页门槛越低。以上9个词全部带Amazon's Choice标(除baby musical table)，均为真实成交词。</p>
+
+      <div class="callout info" style="margin-top:16px;">
+        <b>流量结构解读：</b>① 核心词 <b>baby dj table 月搜索16,112次</b>、CPC仅$0.63、SPR仅4件、在售商品仅160个——流量集中、广告便宜、上首页门槛极低，这是一个典型的"流量入口窄但通行费便宜"的细分市场；② 词族(baby/toddler/dj table/set)合计月搜索约3.2万次，全部指向同一批产品；③ 核心词点击集中度68.7%，意味着<b>头部3个ASIN吃掉了近7成点击</b>——挑战不在买流量，而在把Thremhoo/Basytodio从头部位挤下来；④ 标题密度仅3(160个商品里只有3个标题完整包含核心词)，SEO埋词空间大；⑤ 大龄段的kids dj set CPC $2.42，是婴幼段的4倍——从广告成本角度也应做婴幼定位；⑥ baby piano toy(搜索1,840/CPC$0.61/点击集中度仅26.4%)是最佳外围补充流量词。
+      </div>
+
+      <table class="data-table" style="margin-top:20px;">
+        <thead><tr><th style="width:32%">类目结构指标(Baby Musical Toys, Top100样本)</th><th>数值</th><th>对决策的意义</th></tr></thead>
+        <tbody>
+          <tr><td>类目均价 / 头部10款均价</td><td>$22.84 / $21.06</td><td>你的$32-40定位显著高于类目均价，溢价靠"活动桌"形态支撑，与头部低价挂玩具不直接冲突</td></tr>
+          <tr><td>头部10款月均销量 / 月均销售额</td><td>5,381件 / $103,816</td><td>类目天花板足够高；Thremhoo(2,790件)已达头部一半水平</td></tr>
+          <tr><td>新品(≤6个月)占比 / 新品月均销量</td><td>34% / 387件</td><td>Top100里1/3是半年内新品且平均能卖387件/月——<b>类目对新品接受度真实存在</b>，不是老品铁板一块</td></tr>
+          <tr><td>上架3年以上老品的销量占比</td><td>57.2%</td><td>老品仍主导，但上架1~1.5年段产品(含Thremhoo/Basytodio)已贡献17%销量，证明近两年入场者有成功先例</td></tr>
+          <tr><td>评分4.5以上产品的销量占比</td><td>79.2%</td><td><b>评分低于4.3很难存活</b>(4.0-4.3段仅占6.5%销量)。Basytodio以4.2分卖到2,201件/月是"费雪缺货红利"下的例外，不可作为常态预期——改款必须以4.5分为质量目标线</td></tr>
+          <tr><td>头部品牌格局</td><td>Tonies / Baby Einstein / Fisher-Price / VTech 为类目头部</td><td>头部是听书盒与传统大牌，与DJ桌细分不直接交锋；DJ桌细分内部无强势品牌，白牌可打</td></tr>
+        </tbody>
+      </table>
+
+      <table class="data-table" style="margin-top:20px;">
+        <thead><tr><th>季节性(以各产品自身13个月均值为基准)</th><th class="num">平月均销</th><th class="num">11月倍数</th><th class="num">12月倍数</th></tr></thead>
+        <tbody>
+          <tr><td>Basytodio</td><td class="num">1,929件</td><td class="num">1.7×</td><td class="num">2.8×</td></tr>
+          <tr><td>CL FUN</td><td class="num">458件</td><td class="num">2.2×</td><td class="num">2.8×</td></tr>
+          <tr><td>OZMI</td><td class="num">547件</td><td class="num">3.2×</td><td class="num">3.9×</td></tr>
+        </tbody>
+      </table>
+      <div class="callout danger" style="margin-top:12px;">
+        <b>备货与上架节奏结论：</b>Q4(11-12月)销量为平月的<b>2~4倍</b>，圣诞礼物是本品类最强购买场景(与VOC送礼场景31次提及互相印证)。新品应在<b>8-9月前完成上架并积累首批评分</b>，赶上Q4流量；错过Q4的新品(参考HEJIN 12月冲到322件后1月起崩盘)生存概率显著降低。注意：Fisher-Price 2025年9月的11,466件尖峰是补货事件(承接缺货积压需求)，不是自然季节性，不要纳入季节系数。
+      </div>
+    </section>
+
+    <section id="review">
+      <div class="section-head">
+        <div class="section-num">06</div>
         <h2>改款设计复核</h2>
         <p class="section-desc">逐项对照10款真竞品功能表现与258条VOC证据，给出保留/差异化/必须修正的判断。</p>
       </div>
@@ -628,7 +697,7 @@
 
     <section id="recommend">
       <div class="section-head">
-        <div class="section-num">06</div>
+        <div class="section-num">07</div>
         <h2>结论与建设性建议</h2>
         <p class="section-desc">按优先级排序，数字越靠前投入产出比越高。</p>
       </div>
@@ -680,6 +749,14 @@
             <p class="rec-title">保留录音、多乐器、打地鼠、跟随模式、按键透光</p>
             <p class="rec-body">这些是好评区反复验证的亮点或10款真竞品里的空白差异化点，尤其"跟随教学模式"是独一份，建议作为Listing主图与A+页面核心卖点重点呈现。</p>
             <p class="rec-evidence">证据：录音功能在Thremhoo、Basytodio、Fisher-Price DJ Table、RedCrab等多款竞品好评区均被点名；跟随模式10款真竞品0覆盖</p>
+          </div>
+        </li>
+        <li class="rec-item p2">
+          <div class="rec-rank">07</div>
+          <div>
+            <p class="rec-title">上架节奏与流量打法：8-9月前上架，主攻 baby dj table 单一核心词</p>
+            <p class="rec-body">Q4销量为平月2~4倍，新品必须在8-9月前完成上架并通过Vine积累首批评分(OZMI/RedCrab/BLF FUN均用了Vine冷启动，是本细分已验证的标准打法)；流量端主攻baby dj table(月搜索16,112/CPC$0.63/SPR仅4件)，标题完整埋词(当前标题密度仅3，SEO空间大)，用baby piano toy(点击集中度仅26.4%)做外围补量，避开CPC $2.42的kids dj set大龄词族。年龄定位锁定9个月~2岁，Listing文案与图片按"first birthday gift"这一最高频购买动机设计。</p>
+            <p class="rec-evidence">证据：第5节关键词矩阵与季节性表；VOC送礼场景31次提及中生日/圣诞为主；HEJIN错过持续运营后1月起销量归零的反面案例</p>
           </div>
         </li>
       </ol>
@@ -970,6 +1047,31 @@ scenarioData.forEach(function(d){
   tr.innerHTML = '<td class="bar-cell">'+d.label+'<span class="bar-track"><span class="bar-fill" style="width:'+(d.n/maxScenario*100).toFixed(0)+'%; background:#1baf7a;"></span></span></td><td class="num">'+d.n+'</td><td class="num">'+pct+'%</td>';
   scenarioTbody.appendChild(tr);
 });
+
+var ageLabels = ['≤12月龄','1-2岁','2岁','3-5岁','6岁以上'];
+var ageBaby = [7,15,5,4,0];
+var ageBig  = [0,0,4,6,5];
+new Chart(document.getElementById('ageChart'), {
+  type:'bar',
+  data:{ labels: ageLabels, datasets:[
+    { label:'婴幼结构5款(31次年龄提及)', data: ageBaby, backgroundColor:'#2a78d6', borderRadius:4, maxBarThickness:34 },
+    { label:'大龄混音结构4款(15次年龄提及)', data: ageBig, backgroundColor:'#e08a68', borderRadius:4, maxBarThickness:34 }
+  ]},
+  options:{
+    responsive:true, maintainAspectRatio:false,
+    plugins:{ legend:{display:true, position:'bottom'} },
+    scales:{ y:{ beginAtZero:true, grid:{color:gridColor}, ticks:{stepSize:5} }, x:{ grid:{display:false} } }
+  }
+});
+var ageTbody = document.getElementById('ageTableBody');
+ageLabels.forEach(function(l, i){
+  var tr = document.createElement('tr');
+  tr.innerHTML = '<td>'+l+'</td><td class="num">'+ageBaby[i]+'</td><td class="num">'+ageBig[i]+'</td>';
+  ageTbody.appendChild(tr);
+});
+var trTotal = document.createElement('tr');
+trTotal.innerHTML = '<td><b>合计(明确年龄提及)</b></td><td class="num"><b>31</b></td><td class="num"><b>15</b></td>';
+ageTbody.appendChild(trTotal);
 
 var backToTop = document.getElementById('backToTop');
 window.addEventListener('scroll', function(){
